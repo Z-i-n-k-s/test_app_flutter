@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test_application/comp/drawer.dart';
 
-class ShopPage extends StatelessWidget {
-  const ShopPage({super.key});
+class CartPage extends StatelessWidget {
+  const CartPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class ShopPage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text('Shop Page'),
+        title: Text('Cart Page'),
       ),
       drawer: const MyDrawer(),
       backgroundColor: Theme.of(context).colorScheme.background,
