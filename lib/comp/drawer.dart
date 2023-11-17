@@ -32,7 +32,8 @@ class MyDrawer extends StatelessWidget {
               onTap: () {
                 Navigator.pop(context);
 
-                Navigator.pushNamed(context, '/shop_page');
+                Navigator.pushNamedAndRemoveUntil(
+                    context, '/shop_page', (route) => false);
               },
             ),
             //cart
